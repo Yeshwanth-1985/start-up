@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url(  '{{ url_for ('static', filename='img/home.jpg')}}'  )">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="site-heading">
+            <h1>PLAY - ON</h1>
+            <span class="subheading">A platform where music enters your heart</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+<center>
+        <a href="/user"><button class="btn btn-primary">Are you an exsting user?, then click here</button></a>
+        <hr>
+         <a href="/registeruser"><button class="btn btn-primary">If not an existing user,then register here?</button></a>
+</center>
+{% endblock %}
